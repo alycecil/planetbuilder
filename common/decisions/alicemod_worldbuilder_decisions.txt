@@ -2,8 +2,7 @@ alicemod_decision_build_asteroid = {
 	owned_planets_only = yes
 	icon = decision_prospect
 
-	#TODO make long
-	enactment_time = 10
+	enactment_time = 240
 	resources = {
 		category = decisions
 		cost = {
