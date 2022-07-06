@@ -1,0 +1,18 @@
+﻿l_english:
+
+ # ###################################
+ # decisions
+ # ###################################
+ alicemod_decision_prospect:0 "Planetary Prospecting"
+ alicemod_decision_prospect_effects_short:0 "Adds a random §YPlanetary Feature§! to the planet."
+ alicemod_decision_prospect_desc:0 "Extensive surveying and prospecting of the planet will let us uncover the presence of natural resources that may otherwise have eluded us."
+
+ alicemod_decision_expand_planetary_sea:0 "Expand Planetary Sea"
+ alicemod_decision_expand_planetary_sea_desc:0 "The sea is our home - and home can never be big enough. Our ice mining networks enable us to harvest ice from other celestial bodies and gradually release it into [This.GetName]'s oceans, expanding the habitable areas on the planet."
+ alicemod_decision_expand_planetary_sea_tooltip:0 "Ice will be harvested from a system with an §Y$sm_ice_mining_station$§! on the starbase."
+
+ decision_build_world_shell:0 "Expand Planet Infrastructure"
+ decision_build_world_shell_desc:0 "The sea is our home - and home can never be big enough. Our resource networks enable us to harvest mass from other celestial bodies and gradually release it into [This.GetName]'s orbit, before slowly expanding the new mass into an orbital shell expanding the habitable areas on the planet."
+ decision_build_world_shell_tooltip:0 "This will expand the planet by one size class with an orbital world shell."
+
+

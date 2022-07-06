@@ -1,0 +1,30 @@
+decision_build_world_shell = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			unity = 2000
+			energy = 5000
+			minerals = 2000
+			alloys = 1000
+		}
+	}
+
+	potential = {
+	}
+
+	effect = {
+		change_planet_size = 1
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops < 50
+		}
+	}
+}
