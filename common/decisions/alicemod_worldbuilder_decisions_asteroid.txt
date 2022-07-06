@@ -298,7 +298,7 @@ alicemod_decision_build_asteroid = {
 	}
 
 	ai_weight = {
-		weight = 1
+		weight = 10
 		modifier = {
 			factor = 0
 			num_pops < 50
