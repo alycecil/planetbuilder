@@ -49,7 +49,7 @@ alicemod_decision_add_star_habs = {
 
 		if = {
 			limit = { check_variable = {
-					which = alicemod_orbit_happened
+					which = alicemod_orbit_happened_habs
 					value <= 1
 			}	}
 			solar_system = {
@@ -71,7 +71,7 @@ alicemod_decision_add_star_habs = {
 		}
 		else_if = {
 			limit = { check_variable = {
-					which = alicemod_orbit_happened
+					which = alicemod_orbit_happened_habs
 					value <= 2
 			}	}
 			solar_system = {
@@ -93,7 +93,7 @@ alicemod_decision_add_star_habs = {
 		}
 		else_if = {
 			limit = { check_variable = {
-					which = alicemod_orbit_happened
+					which = alicemod_orbit_happened_habs
 					value <= 3
 			}	}
 			solar_system = {
