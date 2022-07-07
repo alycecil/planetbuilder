@@ -1,0 +1,291 @@
+alicemod_decision_add_star_asteroids = {
+	icon = decision_prospect
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			unity = 500
+			energy = 500
+			minerals = 2000
+			influence = 25
+		}
+	}
+
+	potential = {
+        is_star = yes
+    }
+
+	allow = {
+		if = {
+			limit = {
+				is_variable_set = alicemod_orbit_happened
+			}
+			custom_tooltip = {
+				fail_text = requires_max_3_times_fail_simple
+				success_text = requires_max_3_times_ice_dumping
+				check_variable = {
+					which = alicemod_orbit_happened
+					value < 7
+				}
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = requires_max_3_times_pass_simple
+				always = yes
+			}
+		}
+	}
+
+    effect = {
+        hidden_effect = {
+            change_variable = {
+                which = alicemod_orbit_happened
+                value = 1
+            }
+        }
+        if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 1
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 51
+                    orbit_distance_offset = 3
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 2
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 103
+                    orbit_distance_offset = 4
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 3
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 154
+                    orbit_distance_offset = 5
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 4
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 206
+                    orbit_distance_offset = 6
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 5
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 257
+                    orbit_distance_offset = 7
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 6
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 309
+                    orbit_distance_offset = 8
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened
+                    value <= 7
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_asteroid
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 360
+                    orbit_distance_offset = 9
+                    size = 2
+                    has_ring = no
+
+                    init_effect = {
+                        set_name = "ASTEROID"
+                        set_planet_flag = new_asteroid
+
+                        random_list = {
+                            10 = { add_deposit = d_minerals_6 }
+                            10 = { add_deposit = d_minerals_8 }
+                            10 = { add_deposit = d_minerals_10 }
+                            10 = { add_deposit = d_minerals_4 add_deposit = d_alloys_2 }
+                            10 = { add_deposit = d_minerals_1 add_deposit = d_alloys_3 }
+                            10 = { add_deposit = d_alloys_4 }
+                            10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
+                            10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
+                            50 = {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+	ai_weight = {
+		weight = 0.1
+	}
+}

@@ -7,3 +7,13 @@
  alicemod_decision_build_asteroid_short:0 "Adds an asteriod in orbit around this planet."
  alicemod_decision_build_asteroid_desc:0 "Adds an asteriod in orbit around this planet."
  alicemod_decision_build_asteroid_tooltip:0 "Adds an asteriod in orbit around this planet."
+
+ alicemod_decision_add_star_asteroids:0 "Orbit Asteroid"
+ alicemod_decision_add_star_asteroids_short:0 "Adds an asteriod in orbit around this planet."
+ alicemod_decision_add_star_asteroids_desc:0 "Adds an asteriod in orbit around this planet."
+ alicemod_decision_add_star_asteroids_tooltip:0 "Adds an asteriod in orbit around this planet."
+
+ alicemod_decision_add_star_habs:0 "Build Habs"
+ alicemod_decision_add_star_habs_short:0 "Adds a Habitat in orbit around this planet."
+ alicemod_decision_add_star_habs_desc:0 "Adds a Habitat in orbit around this planet."
+ alicemod_decision_add_star_habs_tooltip:0 "Adds a Habitat in orbit around this planet."

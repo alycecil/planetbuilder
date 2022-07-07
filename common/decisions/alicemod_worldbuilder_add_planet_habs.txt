@@ -1,0 +1,133 @@
+alicemod_decision_add_star_habs = {
+	icon = decision_prospect
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			unity = 2000
+			energy = 5000
+			minerals = 5000
+			influence = 250
+			alloys = 20000
+		}
+	}
+
+	potential = {
+        is_star = yes
+    }
+
+	allow = {
+		if = {
+			limit = {
+				is_variable_set = alicemod_orbit_happened_habs
+			}
+			custom_tooltip = {
+				fail_text = requires_max_3_times_fail_simple
+				success_text = requires_max_3_times_ice_dumping
+				check_variable = {
+					which = alicemod_orbit_happened_habs
+					value < 3
+				}
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = requires_max_3_times_pass_simple
+				always = yes
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+            change_variable = {
+                which = alicemod_orbit_happened_habs
+                value = 1
+            }
+        }
+
+		if = {
+			limit = { check_variable = {
+					which = alicemod_orbit_happened
+					value <= 1
+			}	}
+			solar_system = {
+				spawn_planet = {
+					class = pc_habitat
+					location = root
+					orbit_location = yes
+					orbit_angle_offset = 120
+					orbit_distance_offset = 26
+					size = 4
+					has_ring = no
+
+					init_effect = {
+						set_name = "Habitat"
+						set_planet_entity = { entity = "habitat_phase_01_entity" graphical_culture = root.owner }
+						set_planet_size = 4
+						set_planet_flag = megastructure
+						set_planet_flag = habitat
+						set_planet_flag = new_habitat
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = {
+					which = alicemod_orbit_happened
+					value <= 2
+			}	}
+			solar_system = {
+				spawn_planet = {
+					class = pc_habitat
+					location = root
+					orbit_location = yes
+					orbit_angle_offset = 240
+					orbit_distance_offset = 27
+					size = 4
+					has_ring = no
+
+					init_effect = {
+						set_name = "Habitat"
+						set_planet_entity = { entity = "habitat_phase_01_entity" graphical_culture = root.owner }
+						set_planet_size = 4
+						set_planet_flag = megastructure
+						set_planet_flag = habitat
+						set_planet_flag = new_habitat
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = {
+					which = alicemod_orbit_happened
+					value <= 3
+			}	}
+			solar_system = {
+				spawn_planet = {
+					class = pc_habitat
+					location = root
+					orbit_location = yes
+					orbit_angle_offset = 360
+					orbit_distance_offset = 28
+					size = 4
+					has_ring = no
+
+					init_effect = {
+						set_name = "Habitat"
+						set_planet_entity = { entity = "habitat_phase_01_entity" graphical_culture = root.owner }
+						set_planet_size = 4
+						set_planet_flag = megastructure
+						set_planet_flag = habitat
+						set_planet_flag = new_habitat
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
