@@ -17,3 +17,8 @@
  alicemod_decision_add_star_habs_short:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_star_habs_desc:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_star_habs_tooltip:0 "Adds a Habitat in orbit around this planet."
+
+ alicemod_decision_add_colony_habs:0 "Build Habs"
+ alicemod_decision_add_colony_habs_short:0 "Adds a Habitat in orbit around this planet."
+ alicemod_decision_add_colony_habs_desc:0 "Adds a Habitat in orbit around this planet."
+ alicemod_decision_add_colony_habs_tooltip:0 "Adds a Habitat in orbit around this planet."

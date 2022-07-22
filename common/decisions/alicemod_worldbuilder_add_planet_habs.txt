@@ -9,7 +9,7 @@ alicemod_decision_add_star_habs = {
 			energy = 5000
 			minerals = 5000
 			influence = 250
-			alloys = 20000
+			alloys = 5000
 		}
 	}
 
@@ -27,7 +27,7 @@ alicemod_decision_add_star_habs = {
 				success_text = requires_max_3_times_ice_dumping
 				check_variable = {
 					which = alicemod_orbit_happened_habs
-					value < 3
+					value < 6
 				}
 			}
 		}
@@ -61,7 +61,7 @@ alicemod_decision_add_star_habs = {
 					orbit_distance_offset = 26
 					size = 4
 					has_ring = no
-					flags = { void_dweller_habitat_2 megastructure habitat commercial_habitat }
+					flags = { void_dweller_habitat_2 megastructure habitat commercial_habitat mining_habitat }
 
 					init_effect = {
 						set_name = "Habitat I"
@@ -83,7 +83,7 @@ alicemod_decision_add_star_habs = {
 					orbit_distance_offset = 27
 					size = 4
 					has_ring = no
-					flags = { void_dweller_habitat_2 megastructure habitat energy_habitat }
+					flags = { void_dweller_habitat_2 megastructure habitat energy_habitat commercial_habitat }
 
                     init_effect = {
                         set_name = "Habitat II"
@@ -105,7 +105,7 @@ alicemod_decision_add_star_habs = {
 					orbit_distance_offset = 28
 					size = 4
 					has_ring = no
-					flags = { void_dweller_habitat_2 megastructure habitat mining_habitat }
+					flags = { void_dweller_habitat_2 megastructure habitat mining_habitat energy_habitat }
 
                     init_effect = {
                         set_name = "Habitat III"
@@ -113,6 +113,72 @@ alicemod_decision_add_star_habs = {
 				}
 			}
 		}
+		else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened_habs
+                    value <= 4
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_habitat
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 120
+                    orbit_distance_offset = 32
+                    size = 4
+                    has_ring = no
+                    flags = { void_dweller_habitat_2 megastructure habitat commercial_habitat research_habitat }
+
+                    init_effect = {
+                        set_name = "Habitat IV"
+                     }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened_habs
+                    value <= 5
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_habitat
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 240
+                    orbit_distance_offset = 33
+                    size = 4
+                    has_ring = no
+                    flags = { void_dweller_habitat_2 megastructure habitat energy_habitat research_habitat }
+
+                     init_effect = {
+                         set_name = "Habitat V"
+                     }
+                }
+            }
+        }
+        else_if = {
+            limit = { check_variable = {
+                    which = alicemod_orbit_happened_habs
+                    value <= 6
+            }	}
+            solar_system = {
+                spawn_planet = {
+                    class = pc_habitat
+                    location = root
+                    orbit_location = yes
+                    orbit_angle_offset = 360
+                    orbit_distance_offset = 34
+                    size = 4
+                    has_ring = no
+                    flags = { void_dweller_habitat_2 megastructure habitat mining_habitat research_habitat }
+
+                     init_effect = {
+                         set_name = "Habitat VI"
+                     }
+                }
+            }
+        }
 	}
 
 	ai_weight = {

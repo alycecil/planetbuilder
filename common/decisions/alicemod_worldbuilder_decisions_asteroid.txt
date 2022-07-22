@@ -15,7 +15,6 @@ alicemod_decision_build_asteroid = {
 
 	potential = {
 		NOR = {
-			has_planet_flag = ruined_orbital_ring_planet
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_ringworld_habitable_damaged
 			is_planet_class = pc_ringworld_tech
@@ -85,7 +84,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -119,7 +118,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -153,7 +152,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -187,7 +186,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -221,7 +220,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -255,7 +254,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
@@ -289,7 +288,7 @@ alicemod_decision_build_asteroid = {
 							10 = { add_deposit = d_alloys_4 }
 							10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
 							10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
-							50 = {}
+							50 = { add_deposit = d_minerals_3 }
 						}
 					}
 				}
