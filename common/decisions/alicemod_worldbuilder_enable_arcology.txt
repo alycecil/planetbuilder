@@ -1,0 +1,58 @@
+alicemod_decision_enable_archology = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			influence = 250
+		}
+	}
+
+	potential = {
+		NOR = {
+			is_planet_class = pc_ringworld_habitable_damaged
+			is_planet_class = pc_ringworld_tech_damaged
+			is_planet_class = pc_ringworld_seam_damaged
+		    has_planet_flag = flag_alicemod_city_world
+		}
+	}
+
+	effect = {
+		set_planet_flag = flag_alicemod_city_world
+
+		planet_class = pc_alicemod_city
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+alicemod_decision_become_archology = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+		    minerals = 50000
+		    alloys = 50000
+			influence = 250
+		}
+	}
+
+	potential = {
+		has_planet_flag = flag_alicemod_city_world
+	}
+
+	effect = {
+		planet_class = pc_alicemod_city
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

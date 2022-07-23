@@ -22,3 +22,5 @@
  alicemod_decision_add_colony_habs_short:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_colony_habs_desc:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_colony_habs_tooltip:0 "Adds a Habitat in orbit around this planet."
+
+ pc_alicemod_city:0 "Arcology"

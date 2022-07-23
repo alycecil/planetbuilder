@@ -74,6 +74,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -108,6 +110,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -142,6 +146,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -176,6 +182,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -210,6 +218,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -244,6 +254,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -278,6 +290,8 @@ alicemod_decision_add_star_asteroids = {
                             10 = { add_deposit = d_minerals_3 add_deposit = d_energy_3 }
                             10 = { add_deposit = d_minerals_2 add_deposit = d_energy_5 }
                             50 = { add_deposit = d_minerals_3 }
+                            50 = { add_deposit = d_minerals_2 }
+                            50 = { add_deposit = d_minerals_1 }
                         }
                     }
                 }
@@ -286,6 +300,6 @@ alicemod_decision_add_star_asteroids = {
     }
 
 	ai_weight = {
-		weight = 0.1
+		weight = 5
 	}
 }

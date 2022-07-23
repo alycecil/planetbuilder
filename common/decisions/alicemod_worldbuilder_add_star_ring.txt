@@ -1,0 +1,146 @@
+alicemod_decision_add_star_ring = {
+	icon = decision_prospect
+
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			unity = 5000
+            energy = 8000
+            minerals = 20000
+            alloys = 20000
+            influence = 25
+		}
+	}
+
+	potential = {
+        is_star = yes
+    }
+
+	allow = {
+		if = {
+			limit = {
+				is_variable_set = alicemod_orbit_ring_happened
+			}
+			custom_tooltip = {
+				fail_text = requires_max_3_times_fail_simple
+				success_text = requires_max_3_times_ice_dumping
+				check_variable = {
+					which = alicemod_orbit_ring_happened
+					value < 1
+				}
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = requires_max_3_times_pass_simple
+				always = yes
+			}
+		}
+	}
+
+    effect = {
+        hidden_effect = {
+            change_variable = {
+                which = alicemod_orbit_ring_happened
+                value = 1
+            }
+        }
+        save_event_target_as = alicemod_target_orbital_ring
+
+        solar_system = {
+            spawn_planet = {
+                class = "pc_ringworld_habitable"
+                location = root
+                orbit_location = yes
+                orbit_angle_offset = 35
+                orbit_distance_offset = 45
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_A"
+                    set_planet_entity = {
+                        entity = "ringworld_habitable_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+            spawn_planet = {
+                class = "pc_ringworld_habitable"
+                location = root
+                orbit_location = yes
+                orbit_angle_offset = 135
+                orbit_distance_offset = 35
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_B"
+                    set_planet_entity = {
+                        entity = "ringworld_habitable_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+            spawn_planet = {
+                class = "pc_ringworld_habitable"
+                location = root
+                orbit_location = yes
+                orbit_angle_offset = 225
+                orbit_distance_offset = 35
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_C"
+                    set_planet_entity = {
+                        entity = "ringworld_habitable_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+            spawn_planet = {
+                class = "pc_ringworld_habitable"
+                location = root
+                orbit_location = yes
+                orbit_angle_offset = 315
+                orbit_distance_offset = 35
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_D"
+                    set_planet_entity = {
+                        entity = "ringworld_habitable_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+        }
+    }
+
+	ai_weight = {
+		weight = 0
+	}
+}
