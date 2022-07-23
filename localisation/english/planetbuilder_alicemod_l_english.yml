@@ -13,14 +13,34 @@
  alicemod_decision_add_star_asteroids_desc:0 "Adds an asteriod in orbit around this planet."
  alicemod_decision_add_star_asteroids_tooltip:0 "Adds an asteriod in orbit around this planet."
 
- alicemod_decision_add_star_habs:0 "Build Habs"
+ alicemod_decision_add_star_habs:0 "Build Habitat"
  alicemod_decision_add_star_habs_short:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_star_habs_desc:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_star_habs_tooltip:0 "Adds a Habitat in orbit around this planet."
 
- alicemod_decision_add_colony_habs:0 "Build Habs"
+ alicemod_decision_add_colony_habs:0 "Build Habitat"
  alicemod_decision_add_colony_habs_short:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_colony_habs_desc:0 "Adds a Habitat in orbit around this planet."
  alicemod_decision_add_colony_habs_tooltip:0 "Adds a Habitat in orbit around this planet."
 
  pc_alicemod_city:0 "Arcology"
+
+ alicemod_decision_enable_archology:0 "Prepare arcology contruction"
+ alicemod_decision_enable_archology_short:0 "Removes blockers and allows a new district."
+ alicemod_decision_enable_archology_desc:0 "Removes blockers and allows the building of the arcology district, and the establishment of an arcology through further decisions."
+ alicemod_decision_enable_archology_tooltip:0 "Removes blockers and allows the building of the arcology district, and the establishment of an arcology through further decisions."
+
+ alicemod_decision_become_archology:0 "Construct planetary arcology"
+ alicemod_decision_become_archology_short:0 "Covers the planet in infrastructure to support a world city."
+ alicemod_decision_become_archology_desc:0 "Covers the planet in infrastructure to support a world city, replacing all but the new arcology districts previously built in the intermediate phase."-
+ alicemod_decision_become_archology_tooltip:0 "Covers the planet in infrastructure to support a world city, replacing all but the new arcology districts previously built in the intermediate phase."
+
+ alicemod_decision_add_star_ring:0 "Construct inner habitibal ring world"
+ alicemod_decision_add_star_ring_short:0 "Build a ring around this star."
+ alicemod_decision_add_star_ring_desc:0 "Build a habitibal ring around this star without removing all the other planets for mass."
+ alicemod_decision_add_star_ring_tooltip:0 "Build a habitibal ring around this star without removing all the other planets for mass."
+
+ alicemod_decision_add_star_ring_2:0 "Construct outer habitibal ring world"
+ alicemod_decision_add_star_ring_2_short:0 "Build a ring around this star."
+ alicemod_decision_add_star_ring_2_desc:0 "Build a habitibal ring around this star without removing all the other planets for mass."
+ alicemod_decision_add_star_ring_2_tooltip:0 "Build a habitibal ring around this star without removing all the other planets for mass."

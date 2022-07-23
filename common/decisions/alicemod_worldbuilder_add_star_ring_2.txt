@@ -1,4 +1,4 @@
-alicemod_decision_add_star_ring = {
+alicemod_decision_add_star_ring_2 = {
 	icon = decision_prospect
 
 	enactment_time = 0
@@ -6,17 +6,16 @@ alicemod_decision_add_star_ring = {
 		category = decisions
 		cost = {
 			unity = 5000
-            energy = 8000
-            minerals = 20000
-            alloys = 20000
+            energy = 12000
+            minerals = 30000
+            alloys = 30000
             influence = 300
 		}
 	}
 
 	potential = {
         is_star = yes
-        # owner = { has_technology = "tech_ring_world" }
-        is_planet = solar_system.star
+        is_variable_set = alicemod_orbit_ring_happened
     }
 
 	allow = {
@@ -29,7 +28,7 @@ alicemod_decision_add_star_ring = {
 				success_text = requires_max_3_times_ice_dumping
 				check_variable = {
 					which = alicemod_orbit_ring_happened
-					value < 1
+					value < 2
 				}
 			}
 		}
@@ -59,38 +58,16 @@ alicemod_decision_add_star_ring = {
                 country_event = { id = utopia.2017 }
             }
         }
+        save_event_target_as = alicemod_target_orbital_ring
 
         solar_system = {
-            spawn_planet = {
-                class = "pc_ringworld_seam"
-                location = root
-                
-                orbit_location = yes
-                orbit_angle_offset = 15
-                orbit_distance_offset = 35
-                size = 10
-                has_ring = no
-
-                init_effect = {
-                    set_name = "NAME_Ring_Section"
-                    set_planet_entity = {
-                        entity = "ringworld_seam_entity_01_entity"
-                        graphical_culture = owner
-                    }
-                    set_all_comms_surveyed = yes
-                    clear_blockers = yes
-                    save_event_target_as = ring_section
-                    trigger_megastructure_icon = yes
-                    set_planet_flag = megastructure
-                }
-            }
             spawn_planet = {
                 class = "pc_ringworld_habitable"
                 location = root
 
                 orbit_location = yes
-                orbit_angle_offset = 45
-                orbit_distance_offset = 35
+                orbit_angle_offset = 23
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
@@ -107,13 +84,14 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
             spawn_planet = {
                 class = "pc_ringworld_seam"
                 location = root
-                
+
                 orbit_location = yes
-                orbit_angle_offset = 75
-                orbit_distance_offset = 35
+                orbit_angle_offset = 45
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
@@ -130,13 +108,14 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
             spawn_planet = {
                 class = "pc_ringworld_seam"
                 location = root
-                
+
                 orbit_location = yes
-                orbit_angle_offset = 105
-                orbit_distance_offset = 35
+                orbit_angle_offset = 68
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
@@ -153,18 +132,139 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 90
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
             spawn_planet = {
                 class = "pc_ringworld_habitable"
                 location = root
-                
+
+                orbit_location = yes
+                orbit_angle_offset = 113
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_A"
+                    set_planet_entity = {
+                        entity = "ringworld_habitable_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
                 orbit_location = yes
                 orbit_angle_offset = 135
-                orbit_distance_offset = 35
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
                 init_effect = {
-                    set_name = "NAME_Habitable_Section_B"
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 158
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 180
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_habitable"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 203
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Habitable_Section_A"
                     set_planet_entity = {
                         entity = "ringworld_habitable_entity_01_entity"
                         graphical_culture = owner
@@ -176,82 +276,14 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
             spawn_planet = {
                 class = "pc_ringworld_seam"
                 location = root
-                
-                orbit_location = yes
-                orbit_angle_offset = 165
-                orbit_distance_offset = 35
-                size = 10
-                has_ring = no
 
-                init_effect = {
-                    set_name = "NAME_Ring_Section"
-                    set_planet_entity = {
-                        entity = "ringworld_seam_entity_01_entity"
-                        graphical_culture = owner
-                    }
-                    set_all_comms_surveyed = yes
-                    clear_blockers = yes
-                    save_event_target_as = ring_section
-                    trigger_megastructure_icon = yes
-                    set_planet_flag = megastructure
-                }
-            }
-            spawn_planet = {
-                class = "pc_ringworld_seam"
-                location = root
-                
-                orbit_location = yes
-                orbit_angle_offset = 195
-                orbit_distance_offset = 35
-                size = 10
-                has_ring = no
-
-                init_effect = {
-                    set_name = "NAME_Ring_Section"
-                    set_planet_entity = {
-                        entity = "ringworld_seam_entity_01_entity"
-                        graphical_culture = owner
-                    }
-                    set_all_comms_surveyed = yes
-                    clear_blockers = yes
-                    save_event_target_as = ring_section
-                    trigger_megastructure_icon = yes
-                    set_planet_flag = megastructure
-                }
-            }
-            spawn_planet = {
-                class = "pc_ringworld_habitable"
-                location = root
-                
                 orbit_location = yes
                 orbit_angle_offset = 225
-                orbit_distance_offset = 35
-                size = 10
-                has_ring = no
-
-                init_effect = {
-                    set_name = "NAME_Habitable_Section_C"
-                    set_planet_entity = {
-                        entity = "ringworld_habitable_entity_01_entity"
-                        graphical_culture = owner
-                    }
-                    set_all_comms_surveyed = yes
-                    clear_blockers = yes
-                    save_event_target_as = ring_section
-                    trigger_megastructure_icon = yes
-                    set_planet_flag = megastructure
-                }
-            }
-            spawn_planet = {
-                class = "pc_ringworld_seam"
-                location = root
-                
-                orbit_location = yes
-                orbit_angle_offset = 255
-                orbit_distance_offset = 35
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
@@ -268,13 +300,14 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
             spawn_planet = {
                 class = "pc_ringworld_seam"
                 location = root
-                
+
                 orbit_location = yes
-                orbit_angle_offset = 285
-                orbit_distance_offset = 35
+                orbit_angle_offset = 248
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
@@ -291,18 +324,43 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 270
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
             spawn_planet = {
                 class = "pc_ringworld_habitable"
                 location = root
-                
+
                 orbit_location = yes
-                orbit_angle_offset = 315
-                orbit_distance_offset = 35
+                orbit_angle_offset = 293
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 
                 init_effect = {
-                    set_name = "NAME_Habitable_Section_D"
+                    set_name = "NAME_Habitable_Section_A"
                     set_planet_entity = {
                         entity = "ringworld_habitable_entity_01_entity"
                         graphical_culture = owner
@@ -314,13 +372,62 @@ alicemod_decision_add_star_ring = {
                     set_planet_flag = megastructure
                 }
             }
+
             spawn_planet = {
                 class = "pc_ringworld_seam"
                 location = root
-                
+
                 orbit_location = yes
-                orbit_angle_offset = 345
-                orbit_distance_offset = 35
+                orbit_angle_offset = 315
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 338
+                orbit_distance_offset = 55
+                size = 10
+                has_ring = no
+
+                init_effect = {
+                    set_name = "NAME_Ring_Section"
+                    set_planet_entity = {
+                        entity = "ringworld_seam_entity_01_entity"
+                        graphical_culture = owner
+                    }
+                    set_all_comms_surveyed = yes
+                    clear_blockers = yes
+                    save_event_target_as = ring_section
+                    trigger_megastructure_icon = yes
+                    set_planet_flag = megastructure
+                }
+            }
+
+            spawn_planet = {
+                class = "pc_ringworld_seam"
+                location = root
+
+                orbit_location = yes
+                orbit_angle_offset = 360
+                orbit_distance_offset = 55
                 size = 10
                 has_ring = no
 

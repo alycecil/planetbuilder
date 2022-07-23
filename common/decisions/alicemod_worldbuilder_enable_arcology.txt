@@ -6,6 +6,8 @@ alicemod_decision_enable_archology = {
 	resources = {
 		category = decisions
 		cost = {
+		    minerals = 10000
+		    energy = 10000
 			influence = 250
 		}
 	}
@@ -21,8 +23,7 @@ alicemod_decision_enable_archology = {
 
 	effect = {
 		set_planet_flag = flag_alicemod_city_world
-
-		planet_class = pc_alicemod_city
+        clear_blockers = yes
 	}
 
 	ai_weight = {
@@ -46,10 +47,19 @@ alicemod_decision_become_archology = {
 
 	potential = {
 		has_planet_flag = flag_alicemod_city_world
+		NOT = {
+		    is_planet_class = pc_alicemod_city
+		}
 	}
 
 	effect = {
-		planet_class = pc_alicemod_city
+		change_pc = pc_alicemod_city
+        add_deposit = d_former_relic_world
+
+        set_planet_entity = {
+            entity = "city_planet_entity"
+            graphical_culture = owner
+        }
 	}
 
 	ai_weight = {

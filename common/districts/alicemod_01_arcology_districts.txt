@@ -1,4 +1,5 @@
 alicemod_district_arcology_housing = {
+	icon = "district_arcology_housing"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
@@ -183,6 +184,7 @@ alicemod_district_arcology_housing = {
 }
 
 alicemod_district_arcology_arms_industry = {
+	icon = "district_arcology_arms_industry"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
@@ -396,6 +398,7 @@ alicemod_district_arcology_arms_industry = {
 }
 
 alicemod_district_arcology_civilian_industry = {
+	icon = "district_arcology_civilian_industry"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
@@ -566,6 +569,7 @@ alicemod_district_arcology_civilian_industry = {
 }
 
 alicemod_district_arcology_leisure = {
+	icon = "district_arcology_leisure"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
@@ -678,6 +682,7 @@ alicemod_district_arcology_leisure = {
 }
 
 alicemod_district_arcology_organic_housing = {
+	icon = "district_arcology_organic_housing"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
@@ -753,7 +758,8 @@ alicemod_district_arcology_organic_housing = {
 	}
 }
 
-alicemod_district_arcology_administrative = 	{
+alicemod_district_arcology_administrative = {
+	icon = "district_arcology_administrative"
 
 	base_buildtime = 600
 	is_capped_by_modifier = no
@@ -873,6 +879,7 @@ alicemod_district_arcology_administrative = 	{
 }
 
 alicemod_district_arcology_religious = {
+	icon = "district_arcology_religious"
 	base_buildtime = 600
 	is_capped_by_modifier = no
 
