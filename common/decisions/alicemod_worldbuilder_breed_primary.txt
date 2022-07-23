@@ -1,0 +1,28 @@
+alicemod_decision_breed_primary = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 100
+	resources = {
+		category = decisions
+		cost = {
+			unity = 1000
+			energy = 1000
+			minerals = 1000
+			food = 1000
+			influence = 25
+		}
+	}
+
+	potential = { }
+
+	effect = {
+        create_pop = {
+            species = owner_main_species
+        }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

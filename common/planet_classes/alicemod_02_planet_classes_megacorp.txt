@@ -2,7 +2,7 @@ pc_alicemod_city = {
 	entity = "city_planet"
 	entity_scale = 6
 	icon = GFX_planet_type_city
-	 picture = pc_city
+	picture = pc_city
 
 	climate = "dry"
 

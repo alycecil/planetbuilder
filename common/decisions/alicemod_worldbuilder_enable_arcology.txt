@@ -2,7 +2,7 @@ alicemod_decision_enable_archology = {
 	owned_planets_only = yes
 	icon = decision_prospect
 
-	enactment_time = 0
+	enactment_time = 200
 	resources = {
 		category = decisions
 		cost = {
@@ -35,7 +35,7 @@ alicemod_decision_become_archology = {
 	owned_planets_only = yes
 	icon = decision_prospect
 
-	enactment_time = 0
+	enactment_time = 1000
 	resources = {
 		category = decisions
 		cost = {
@@ -47,8 +47,12 @@ alicemod_decision_become_archology = {
 
 	potential = {
 		has_planet_flag = flag_alicemod_city_world
-		NOT = {
+		NOR = {
 		    is_planet_class = pc_alicemod_city
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_ringworld_tech
+			is_planet_class = pc_ringworld_seam
 		}
 	}
 
@@ -60,6 +64,8 @@ alicemod_decision_become_archology = {
             entity = "city_planet_entity"
             graphical_culture = owner
         }
+
+        change_planet_size = 1
 	}
 
 	ai_weight = {
