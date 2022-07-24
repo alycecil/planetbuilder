@@ -299,8 +299,24 @@ alicemod_decision_build_asteroid = {
 	ai_weight = {
 		weight = 10
 		modifier = {
-			factor = 0
+			factor = 0.1
 			num_pops < 50
 		}
+		modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
 	}
 }

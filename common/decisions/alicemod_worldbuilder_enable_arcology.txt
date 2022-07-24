@@ -24,10 +24,34 @@ alicemod_decision_enable_archology = {
 	effect = {
 		set_planet_flag = flag_alicemod_city_world
         clear_blockers = yes
+        while = {
+            count = 10
+            add_district = alicemod_district_arcology_housing
+        }
 	}
 
 	ai_weight = {
 		weight = 5
+		modifier = {
+            factor = 0
+            num_pops < 100
+        }
+		modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
 	}
 }
 
@@ -53,6 +77,8 @@ alicemod_decision_become_archology = {
 			is_planet_class = pc_ringworld_habitable
 			is_planet_class = pc_ringworld_tech
 			is_planet_class = pc_ringworld_seam
+			is_planet_class = pc_relic
+			is_planet_class = pc_city
 		}
 	}
 
@@ -65,10 +91,30 @@ alicemod_decision_become_archology = {
             graphical_culture = owner
         }
 
-        change_planet_size = 1
+        change_planet_size = 10
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 10
+		modifier = {
+            factor = 0
+            num_pops < 70
+        }
+        modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
 	}
 }

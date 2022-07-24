@@ -6,15 +6,17 @@ alicemod_decision_breed = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 1000
-			energy = 1000
-			minerals = 1000
-			food = 1000
+			unity = 600
+			energy = 400
+			minerals = 700
+			food = 700
 			influence = 25
 		}
 	}
 
-	potential = { }
+	potential = {
+	    num_pops > 25
+	}
 
 	effect = {
         random_owned_pop = {
@@ -28,5 +30,93 @@ alicemod_decision_breed = {
 
 	ai_weight = {
 		weight = 5
+        modifier = {
+            factor = 0
+            num_pops > 300
+        }
+        modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
+	}
+}
+
+alicemod_decision_breed_x10 = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 600
+	resources = {
+		category = decisions
+		cost = {
+			unity = 8000
+			energy = 2000
+			minerals = 6000
+			food = 6000
+			influence = 90
+		}
+	}
+
+	potential = {
+	    num_pops > 75
+	}
+
+	effect = {
+
+        while = {
+            count = 10
+            random_owned_pop = {
+                root = {
+                    create_pop = {
+                        species = prev
+                    }
+                }
+            }
+        }
+	}
+
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+            factor = 0
+            num_pops < 25
+        }
+        modifier = {
+            factor = 0.1
+            num_pops < 60
+        }
+        modifier = {
+            factor = 0
+            num_pops > 300
+        }
+        modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
 	}
 }

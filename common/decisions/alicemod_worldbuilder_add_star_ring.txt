@@ -7,15 +7,14 @@ alicemod_decision_add_star_ring = {
 		cost = {
 			unity = 5000
             energy = 8000
-            minerals = 20000
-            alloys = 20000
-            influence = 300
+            minerals = 50000
+            alloys = 50000
+            influence = 500
 		}
 	}
 
 	potential = {
         is_star = yes
-        # owner = { has_technology = "tech_ring_world" }
         is_planet = solar_system.star
     }
 
@@ -105,6 +104,11 @@ alicemod_decision_add_star_ring = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
             spawn_planet = {
@@ -174,6 +178,11 @@ alicemod_decision_add_star_ring = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
             spawn_planet = {
@@ -243,6 +252,11 @@ alicemod_decision_add_star_ring = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
             spawn_planet = {
@@ -312,6 +326,11 @@ alicemod_decision_add_star_ring = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
             spawn_planet = {
@@ -341,6 +360,6 @@ alicemod_decision_add_star_ring = {
     }
 
 	ai_weight = {
-		weight = 0
+		weight = 1
 	}
 }

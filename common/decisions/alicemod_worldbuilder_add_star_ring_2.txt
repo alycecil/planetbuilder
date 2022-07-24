@@ -7,9 +7,9 @@ alicemod_decision_add_star_ring_2 = {
 		cost = {
 			unity = 5000
             energy = 12000
-            minerals = 30000
-            alloys = 30000
-            influence = 300
+            minerals = 70000
+            alloys = 70000
+            influence = 500
 		}
 	}
 
@@ -82,6 +82,11 @@ alicemod_decision_add_star_ring_2 = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
 
@@ -178,6 +183,11 @@ alicemod_decision_add_star_ring_2 = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
 
@@ -274,6 +284,11 @@ alicemod_decision_add_star_ring_2 = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
 
@@ -370,6 +385,11 @@ alicemod_decision_add_star_ring_2 = {
                     save_event_target_as = ring_section
                     trigger_megastructure_icon = yes
                     set_planet_flag = megastructure
+
+                    while = {
+                        count = 10
+                        add_deposit = d_ruined_building_blocker
+                    }
                 }
             }
 
@@ -447,7 +467,8 @@ alicemod_decision_add_star_ring_2 = {
         }
     }
 
+    # IF THE AI CAN, THEY WILL GO TALl, ASSUMING THEY ALREADY DECIDED TO START OR THEY TOOK THIS PLACE
 	ai_weight = {
-		weight = 0
+		weight = 1000
 	}
 }

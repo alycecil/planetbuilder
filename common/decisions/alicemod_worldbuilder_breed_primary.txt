@@ -6,7 +6,7 @@ alicemod_decision_breed_primary = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 1000
+			unity = 100
 			energy = 1000
 			minerals = 1000
 			food = 1000
@@ -14,7 +14,9 @@ alicemod_decision_breed_primary = {
 		}
 	}
 
-	potential = { }
+	potential = {
+	    num_pops > 25
+	}
 
 	effect = {
         create_pop = {
@@ -24,5 +26,25 @@ alicemod_decision_breed_primary = {
 
 	ai_weight = {
 		weight = 5
+        modifier = {
+            factor = 0
+            num_pops > 300
+        }
+        modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
 	}
 }

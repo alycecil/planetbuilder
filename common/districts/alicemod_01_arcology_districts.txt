@@ -3,6 +3,7 @@ alicemod_district_arcology_housing = {
 	base_buildtime = 600
 	is_capped_by_modifier = no
 	exempt_from_ai_planet_specialization = yes
+	# position_priority = 1
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
@@ -34,17 +35,8 @@ alicemod_district_arcology_housing = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 15
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_maintenance_drone_add = 9
-		}
+		planet_housing_add = 20
+		planet_max_buildings_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -110,22 +102,31 @@ alicemod_district_arcology_housing = {
         }
     }
 
-	triggered_planet_modifier = {
+    triggered_planet_modifier = {
         potential = {
             exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
         }
         modifier = {
-            job_farmer_add = 5
+			planet_housing_add = 2
+            job_spawning_drone_add = 1
+            job_brain_drone_add = 1
         }
     }
 
-    triggered_planet_modifier = {
+	triggered_planet_modifier = {
         potential = {
-        exists = owner
-            owner = { is_gestalt = yes }
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
         }
         modifier = {
-            job_agri_drone_add = 5
+			planet_housing_add = 2
+            job_replicator_add = 1
+            job_calculator_add = 1
         }
     }
 
@@ -145,24 +146,41 @@ alicemod_district_arcology_housing = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_clerk_add = 10
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = { has_active_tradition = tr_prosperity_interstellar_franchising }
 		}
 		modifier = {
 			job_clerk_add = 5
 		}
 	}
+
+	#
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 10
+            job_farmer_add = 5
+            job_miner_add = 5
+		}
+	}
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+			job_maintenance_drone_add = 8
+			job_technician_drone_add = 4
+            job_agri_drone_add = 4
+            job_mining_drone_add = 4
+        }
+    }
 
 	triggered_desc = {
 		trigger = {
@@ -187,6 +205,7 @@ alicemod_district_arcology_arms_industry = {
 	icon = "district_arcology_arms_industry"
 	base_buildtime = 600
 	is_capped_by_modifier = no
+	# position_priority = 2
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
@@ -401,6 +420,7 @@ alicemod_district_arcology_civilian_industry = {
 	icon = "district_arcology_civilian_industry"
 	base_buildtime = 600
 	is_capped_by_modifier = no
+	# position_priority = 3
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
@@ -572,6 +592,7 @@ alicemod_district_arcology_leisure = {
 	icon = "district_arcology_leisure"
 	base_buildtime = 600
 	is_capped_by_modifier = no
+	# position_priority = 4
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
@@ -685,6 +706,7 @@ alicemod_district_arcology_organic_housing = {
 	icon = "district_arcology_organic_housing"
 	base_buildtime = 600
 	is_capped_by_modifier = no
+	# position_priority = 5
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
@@ -694,7 +716,10 @@ alicemod_district_arcology_organic_housing = {
 	}
 
 	potential = {
-		uses_district_set = alicemod_city_world
+        OR = {
+            uses_district_set = alicemod_city_world
+            has_planet_flag = flag_alicemod_city_world
+    	}
 		owner = {
 			exists = owner
 			has_valid_civic = civic_machine_servitor
@@ -760,6 +785,7 @@ alicemod_district_arcology_organic_housing = {
 
 alicemod_district_arcology_administrative = {
 	icon = "district_arcology_administrative"
+	# position_priority = 6
 
 	base_buildtime = 600
 	is_capped_by_modifier = no
@@ -882,6 +908,7 @@ alicemod_district_arcology_religious = {
 	icon = "district_arcology_religious"
 	base_buildtime = 600
 	is_capped_by_modifier = no
+	# position_priority = 7
 
 	show_on_uncolonized = {
 		uses_district_set = alicemod_city_world
