@@ -95,7 +95,7 @@ public class Build {
 
     public static void main(String[] args) {
         String whichVar = "alicemod_outer_orbit_happened_2";
-        int count = 4*16*2;
+        int count = 4*16*3;
         double degrees = 360.0 / count;
         double degrees_current = 0;
         int distance = 450;

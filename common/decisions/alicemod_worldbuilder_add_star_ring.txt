@@ -107,7 +107,7 @@ alicemod_decision_add_star_ring = {
 
                     while = {
                         count = 10
-                        add_deposit = d_ruined_building_blocker
+                        add_deposit = d_terraforming_blocker
                     }
                 }
             }
@@ -181,7 +181,7 @@ alicemod_decision_add_star_ring = {
 
                     while = {
                         count = 10
-                        add_deposit = d_ruined_building_blocker
+                        add_deposit = d_terraforming_blocker
                     }
                 }
             }
@@ -255,7 +255,7 @@ alicemod_decision_add_star_ring = {
 
                     while = {
                         count = 10
-                        add_deposit = d_ruined_building_blocker
+                        add_deposit = d_terraforming_blocker
                     }
                 }
             }
@@ -329,7 +329,7 @@ alicemod_decision_add_star_ring = {
 
                     while = {
                         count = 10
-                        add_deposit = d_ruined_building_blocker
+                        add_deposit = d_terraforming_blocker
                     }
                 }
             }

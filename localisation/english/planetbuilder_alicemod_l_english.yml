@@ -35,22 +35,22 @@
  alicemod_decision_become_archology_desc:0 "Covers the planet in infrastructure to support a world city, replacing all but the new arcology districts previously built in the intermediate phase."-
  alicemod_decision_become_archology_tooltip:0 "Covers the planet in infrastructure to support a world city, replacing all but the new arcology districts previously built in the intermediate phase."
 
- alicemod_decision_add_star_ring:0 "Construct Inner Habitibal Ring"
+ alicemod_decision_add_star_ring:0 "Inner Habitibal Ring"
  alicemod_decision_add_star_ring_short:0 "Build a ring around this star."
  alicemod_decision_add_star_ring_desc:0 "Build a habitibal ring around this star without removing all the other planets for mass."
  alicemod_decision_add_star_ring_tooltip:0 "Build a habitibal ring around this star without removing all the other planets for mass."
 
- alicemod_decision_add_star_ring_2:0 "Construct Outer Habitibal Ring"
+ alicemod_decision_add_star_ring_2:0 "Secondary Inner Habitibal Ring"
  alicemod_decision_add_star_ring_2_short:0 "Build a ring around this star."
  alicemod_decision_add_star_ring_2_desc:0 "Build a habitibal ring around this star without removing all the other planets for mass."
  alicemod_decision_add_star_ring_2_tooltip:0 "Build a habitibal ring around this star without removing all the other planets for mass."
 
- alicemod_decision_add_star_outer_world:0 "Construct Mid-System Ring Section"
+ alicemod_decision_add_star_outer_world:0 "Mid-System Ring Section"
  alicemod_decision_add_star_outer_world_short:0 "Build a section of a ring around this star."
  alicemod_decision_add_star_outer_world_desc:0 "Build a section of a habitibal ring around this star without removing all the other planets for mass."
  alicemod_decision_add_star_outer_world_tooltip:0 "Build a habitibal ring around this star without removing all the other planets for mass."
 
- alicemod_decision_add_star_outer_world_2:0 "Contruct Outer System Ring Section"
+ alicemod_decision_add_star_outer_world_2:0 "Outer System Ring Section"
  alicemod_decision_add_star_outer_world_2_short:0 "Build a section of a ring around this star."
  alicemod_decision_add_star_outer_world_2_desc:0 "Build a section of a habitibal ring around this star without removing all the other planets for mass."
  alicemod_decision_add_star_outer_world_2_tooltip:0 "Build a section of a habitibal ring around this star without removing all the other planets for mass."
