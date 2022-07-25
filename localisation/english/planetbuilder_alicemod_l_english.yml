@@ -70,6 +70,11 @@
  alicemod_decision_breed_x10_desc:0 "Create ten random Pops"
  alicemod_decision_breed_x10_tooltip:0 "Create ten random Pops"
 
+ alicemod_decision_breed_x100:0 "Deliberate Population Explosion"
+ alicemod_decision_breed_x100_short:0 "Promote Child Birth and Drone Creation"
+ alicemod_decision_breed_x100_desc:0 "Create one hundred random Pops"
+ alicemod_decision_breed_x100_tooltip:0 "Create one hundred random Pops"
+
  alicemod_district_arcology_housing:0 "Residential Arcology"
  alicemod_district_arcology_housing_plural:0 "Residential Arcologies"
  alicemod_district_arcology_housing_desc:0 "With these special ecumenopolistic city districts, integrated vertical architecture is utilized to maximize population density over land surface area."

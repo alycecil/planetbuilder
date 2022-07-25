@@ -8,7 +8,7 @@ alicemod_decision_add_star_habs = {
 			unity = 2000
 			energy = 5000
 			minerals = 5000
-			influence = 250
+			influence = 200
 			alloys = 5000
 		}
 	}

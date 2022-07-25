@@ -74,7 +74,6 @@ alicemod_decision_breed_x10 = {
 	}
 
 	effect = {
-
         while = {
             count = 10
             random_owned_pop = {
@@ -101,6 +100,74 @@ alicemod_decision_breed_x10 = {
         modifier = {
             factor = 0
             num_pops > 300
+        }
+        modifier = {
+            factor = 20
+            solar_system = {
+                exists = owner
+                is_same_value = owner.capital_scope.solar_system
+            }
+        }
+        modifier = {
+            factor = 1.5
+            solar_system = {
+                any_neighbor_system = {
+                    exists = owner
+                    is_same_value = owner.capital_scope.solar_system
+                }
+            }
+        }
+	}
+}
+
+
+alicemod_decision_breed_x100 = {
+	owned_planets_only = yes
+	icon = decision_prospect
+
+	enactment_time = 2000
+	resources = {
+		category = decisions
+		cost = {
+			unity = 80000
+			energy = 20000
+			minerals = 60000
+			food = 60000
+			influence = 250
+		}
+	}
+
+	potential = {
+	    num_pops > 100
+	}
+
+	effect = {
+        while = {
+            count = 100
+            random_owned_pop = {
+                root = {
+                    create_pop = {
+                        species = prev
+                    }
+                }
+            }
+        }
+	}
+
+	ai_weight = {
+		weight = 5
+
+		modifier = {
+            factor = 0
+            num_pops < 25
+        }
+        modifier = {
+            factor = 0.1
+            num_pops < 60
+        }
+        modifier = {
+            factor = 0
+            num_pops > 400
         }
         modifier = {
             factor = 20

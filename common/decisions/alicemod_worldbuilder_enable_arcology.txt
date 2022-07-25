@@ -24,10 +24,6 @@ alicemod_decision_enable_archology = {
 	effect = {
 		set_planet_flag = flag_alicemod_city_world
         clear_blockers = yes
-        while = {
-            count = 10
-            add_district = alicemod_district_arcology_housing
-        }
 	}
 
 	ai_weight = {
