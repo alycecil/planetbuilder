@@ -15,6 +15,13 @@ alicemod_decision_add_star_habs = {
 
 	potential = {
         is_star = yes
+
+        solar_system = {
+            check_variable = {
+                which = alicemod_built_thing
+                value < 32
+            }
+        }
     }
 
 	allow = {
@@ -43,6 +50,12 @@ alicemod_decision_add_star_habs = {
 		hidden_effect = {
             change_variable = {
                 which = alicemod_orbit_happened_habs
+                value = 1
+            }
+        }
+        solar_system = {
+            change_variable = {
+                which = alicemod_built_thing
                 value = 1
             }
         }

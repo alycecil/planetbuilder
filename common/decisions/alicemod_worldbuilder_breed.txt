@@ -15,7 +15,7 @@ alicemod_decision_breed = {
 	}
 
 	potential = {
-	    num_pops > 25
+	    num_pops > 10
 	}
 
 	effect = {
@@ -70,7 +70,7 @@ alicemod_decision_breed_x10 = {
 	}
 
 	potential = {
-	    num_pops > 75
+	    num_pops > 50
 	}
 
 	effect = {
@@ -167,7 +167,7 @@ alicemod_decision_breed_x100 = {
         }
         modifier = {
             factor = 0
-            num_pops > 400
+            num_pops > 700
         }
         modifier = {
             factor = 20

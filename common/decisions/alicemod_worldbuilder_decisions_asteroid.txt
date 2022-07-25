@@ -23,6 +23,12 @@ alicemod_decision_build_asteroid = {
 			is_planet_class = pc_ringworld_seam_damaged
 			is_planet_class = pc_habitat
 		}
+        solar_system = {
+            check_variable = {
+                which = alicemod_built_thing
+                value < 40
+            }
+        }
 	}
 
 	allow = {
@@ -53,6 +59,12 @@ alicemod_decision_build_asteroid = {
 		hidden_effect = {
             change_variable = {
                 which = alicemod_orbit_happened
+                value = 1
+            }
+        }
+        solar_system = {
+            change_variable = {
+                which = alicemod_built_thing
                 value = 1
             }
         }

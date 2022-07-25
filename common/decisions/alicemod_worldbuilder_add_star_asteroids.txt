@@ -14,6 +14,12 @@ alicemod_decision_add_star_asteroids = {
 
 	potential = {
         is_star = yes
+        solar_system = {
+            check_variable = {
+                which = alicemod_built_thing
+                value < 32
+            }
+        }
     }
 
 	allow = {

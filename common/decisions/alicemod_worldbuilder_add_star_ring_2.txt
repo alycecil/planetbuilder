@@ -16,6 +16,12 @@ alicemod_decision_add_star_ring_2 = {
 	potential = {
         is_star = yes
         is_variable_set = alicemod_orbit_ring_happened
+        solar_system = {
+            check_variable = {
+                which = alicemod_built_thing
+                value < 32
+            }
+        }
     }
 
 	allow = {
@@ -45,6 +51,12 @@ alicemod_decision_add_star_ring_2 = {
             change_variable = {
                 which = alicemod_orbit_ring_happened
                 value = 1
+            }
+            solar_system = {
+                change_variable = {
+                    which = alicemod_built_thing
+                    value = 1
+                }
             }
             set_planet_flag = ring_world_built
             change_variable = { which = ring_segments value = 4 }

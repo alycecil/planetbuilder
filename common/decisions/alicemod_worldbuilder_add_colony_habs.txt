@@ -24,6 +24,12 @@ alicemod_decision_add_colony_habs = {
 			is_planet_class = pc_ringworld_seam_damaged
 			is_planet_class = pc_habitat
 		}
+        solar_system = {
+            check_variable = {
+                which = alicemod_built_thing
+                value < 32
+            }
+        }
 	}
 
 	allow = {
@@ -52,6 +58,12 @@ alicemod_decision_add_colony_habs = {
 		hidden_effect = {
             change_variable = {
                 which = alicemod_orbit_happened_habs
+                value = 1
+            }
+        }
+        solar_system = {
+            change_variable = {
+                which = alicemod_built_thing
                 value = 1
             }
         }
