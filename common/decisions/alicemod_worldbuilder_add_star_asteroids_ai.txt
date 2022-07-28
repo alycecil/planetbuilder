@@ -12,8 +12,9 @@ alicemod_decision_add_star_asteroids_ai = {
 
 	potential = {
         is_star = yes
-		owner = { is_ai = yes }
         solar_system = {
+            exists = owner
+            owner = { is_ai = yes }
             check_variable = {
                 which = alicemod_built_thing
                 value < 16

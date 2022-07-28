@@ -6,11 +6,11 @@ alicemod_decision_add_colony_habs = {
 	resources = {
 		category = decisions
 		cost = {
-			unity = 2000
+			unity = 3000
 			energy = 5000
-			minerals = 5000
+			minerals = 2000
 			influence = 200
-			alloys = 5000
+			alloys = 1500
 		}
 	}
 
